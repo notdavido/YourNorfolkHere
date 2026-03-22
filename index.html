@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourNorfolkHere | Curated Local Events</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>YourNorfolkHere</h1>
+            <p>Curated events, pop-ups, and markets in Norfolk, VA for the next week.</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Starred Selections -->
+        <section class="starred-section">
+            <br>
+            <h2>⭐ Starred Selections</h2>
+            <div id="starred-container" class="grid"></div>
+        </section>
+
+        <!-- 2. Filter Buttons -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="thrift">Thrift/Markets</button>
+            <button class="filter-btn" data-filter="food">Food</button>
+            <button class="filter-btn" data-filter="music">Music</button>
+            <button class="filter-btn" data-filter="nightlife">Nightlife</button>
+            <!-- Add these two new lines! -->
+            <button class="filter-btn" data-filter="crafts">Crafts</button>
+            <button class="filter-btn" data-filter="community">Community</button>
+            <button class="filter-btn" data-filter="social">Social/Singles</button>
+        </div>
+
+        <!-- 3. Main Events Grid -->
+        <div id="events-container" class="grid"></div>
+        <!-- NEW: Footer / Donation Section -->
+        <footer>
+            <div class="footer-content">
+                <h3>Keep YourNorfolkHere running ☕</h3>
+                <p>This directory is ran by a broke college student, anything is appreciated!</p>
+                <a href="https://www.buymeacoffee.com/YourNorfolkHere" target="_blank" class="donate-btn">Support the Project</a>
+            </div>
+        </footer>
+
+        <script type="module" src="script.js"></script>
+    </body>
+</html>
